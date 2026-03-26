@@ -1,0 +1,26 @@
+{
+  "total_requests": 100,
+  "success_count": 100,
+  "fail_count": 0,
+  "error_rate_percent": 0.0,
+  "avg_ms": 52.99,
+  "p90_ms": 116.3,
+  "p95_ms": 157.25,
+  "p99_ms": 193.02,
+  "max_ms": 195.0,
+  "avg_latency_ms": 52.77,
+  "avg_connect_ms": 19.11,
+  "throughput_rps": 10.2,
+  "response_code_distribution": {
+    "200": 100
+  },
+  "slowest_labels": [
+    {
+      "label": "GET Health",
+      "count": 100,
+      "avg_ms": 52.99,
+      "max_ms": 195.0
+    }
+  ],
+  "failed_samples": []
+}

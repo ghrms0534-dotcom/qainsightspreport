@@ -1,0 +1,7 @@
+{
+  "baseline_name": "smoke_health",
+  "delta_p95_ms": -92.75,
+  "delta_p99_ms": -206.98,
+  "delta_error_rate_percent": 0.0,
+  "delta_throughput_rps": -39.8
+}

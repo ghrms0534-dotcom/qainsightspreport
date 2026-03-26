@@ -1,0 +1,25 @@
+# QA Insights 성능 테스트 요약
+
+## 1) 핵심 지표
+- 총 요청: 300
+- 성공: 300
+- 실패: 0
+- 에러율: 0.0%
+- 평균 응답시간: 28.68 ms
+- p90: 89.1 ms
+- p95: 108.0 ms
+- p99: 136.03 ms
+- 최대 응답시간: 192.0 ms
+- 처리량: 30.58 rps
+- 측정 구간: 9.81 초
+
+## 2) 게이트 판정
+- 결과: PASS
+- 사유: PASS
+
+## 3) 느린 요청 상위
+- POST Signin (로그인): avg 95.86 ms / max 192.0 ms / count 50
+- GET DevStatus Search (개발현황 조회): avg 23.26 ms / max 118.0 ms / count 50
+- GET Login Page (로그인 페이지): avg 22.36 ms / max 89.0 ms / count 50
+- GET Main Page (메인 진입): avg 11.0 ms / max 66.0 ms / count 50
+- GET Defect Search (결함관리 조회): avg 10.32 ms / max 44.0 ms / count 50

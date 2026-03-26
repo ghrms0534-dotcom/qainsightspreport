@@ -1,0 +1,26 @@
+================================================================================
+QA Insights JMeter 성능 테스트 파이프라인
+================================================================================
+[RUN_DIR] C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes
+플랜: projecteyes
+모드: full
+testplan_dir: C:\Workspace\qainsights\jmeter\testplans
+plan_file: C:\Workspace\qainsights\jmeter\testplans\projecteyes.jmx
+결과 폴더: C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes
+사용자 수: 50
+램프업: 10
+반복 수: 1
+지속 시간(초): 10
+HTML Dashboard 생성: False
+Baseline 비교: True
+한글 HTML 보고서 생성: True
+실행 명령: C:\apache-jmeter-5.6.3\bin\jmeter.bat -n -t C:\Workspace\qainsights\jmeter\testplans\projecteyes.jmx -l C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes\raw.jtl -Jprotocol=http -Jdomain=192.168.0.122 -Jport=8010 -Jbase_url=http://192.168.0.122:8010 -Jhealth_path=/PJTE0000 -Jlogin_path=/user/signin -Jchat_path=/PJTE3000/select -Jusername_field=username -Jpassword_field=password -Jchat_question_field=question -Jauth_token_json_path=$.access_token -Jchat_answer_json_path=$.answer -Jusers=50 -Jramp_up=10 -Jloops=1 -Jduration_sec=10 -Jdata_dir=C:\Workspace\qainsights\jmeter\data
+[STEP] jmeter 완료 (12.86초)
+[STEP] summarize_jtl 완료 (2.96초)
+[STEP] compare_baseline 완료 (0.33초)
+[STEP] generate_korean_report 완료 (1.29초)
+[SUCCESS] 완료: C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes
+[META] 메타데이터: C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes\run_metadata.json
+[TIME] 단계별 소요: {"jmeter_sec": 12.86, "summarize_sec": 2.96, "baseline_compare_sec": 0.33, "llm_report_write_sec": 0.01, "korean_report_sec": 1.29}
+[TIME] 총 소요(대략): 17.45 초
+[REPORT] 보고서: C:\Workspace\qainsights\output\runs\20260324_111502_projecteyes\report.html

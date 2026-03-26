@@ -1,0 +1,27 @@
+{
+  "플랜명": "projecteyes",
+  "파이프라인모드": "full",
+  "결과폴더": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes",
+  "원본결과파일": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\raw.jtl",
+  "HTML리포트폴더": null,
+  "사용자수": 50,
+  "램프업": 10,
+  "반복수": 1,
+  "지속시간초": 10,
+  "생성파일": {
+    "raw_jtl": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\raw.jtl",
+    "summary_json": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\summary.json",
+    "gate_json": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\gate.json",
+    "llm_report_md": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\llm_report.md",
+    "baseline_compare_json": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\baseline_compare.json",
+    "report_html": "C:\\Workspace\\qainsights\\output\\runs\\20260324_111502_projecteyes\\report.html",
+    "html_dashboard_dir": null
+  },
+  "단계별소요초": {
+    "jmeter_sec": 12.86,
+    "summarize_sec": 2.96,
+    "baseline_compare_sec": 0.33,
+    "llm_report_write_sec": 0.01,
+    "korean_report_sec": 1.29
+  }
+}

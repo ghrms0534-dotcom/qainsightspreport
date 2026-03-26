@@ -1,0 +1,56 @@
+{
+  "project_name": "qa-insights-jmeter-qwen-gptoss",
+  "service": {
+    "base_url": "http://aic.iteyes.io:58010",
+    "health_path": "/",
+    "login_path": "/",
+    "chat_path": "/",
+    "username_field": "username",
+    "password_field": "password",
+    "auth_token_json_path": "$.access_token",
+    "chat_question_field": "question",
+    "chat_answer_json_path": "$.answer"
+  },
+  "jmeter": {
+    "bin": "C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat",
+    "testplan_dir": "jmeter/testplans",
+    "default_plan": "smoke_health",
+    "default_users": 10,
+    "default_ramp_up": 1,
+    "default_loops": 1,
+    "default_duration_sec": 10,
+    "data_dir": "jmeter/data"
+  },
+  "paths": {
+    "output_runs_dir": "output/runs",
+    "baselines_dir": "baselines"
+  },
+  "gate": {
+    "global": {
+      "error_rate_percent_max": 5.0,
+      "p95_ms_max": 3000,
+      "p99_ms_max": 5000
+    },
+    "plans": {
+      "projecteyes": {
+        "error_rate_percent_max": 5.0,
+        "p95_ms_max": 3000,
+        "p99_ms_max": 5000
+      }
+    }
+  },
+  "report": {
+    "enable_jmeter_dashboard_in_full": false
+  },
+  "gpt_oss": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "api_key": "EMPTY",
+    "model": "gpt-oss:120b",
+    "timeout_sec": 180,
+    "generation": {
+      "temperature": 0.2,
+      "num_predict": 400
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "total_requests": 300,
+  "success_count": 300,
+  "fail_count": 0,
+  "error_rate_percent": 0.0,
+  "avg_ms": 28.68,
+  "p90_ms": 89.1,
+  "p95_ms": 108.0,
+  "p99_ms": 136.03,
+  "max_ms": 192.0,
+  "throughput_rps": 30.58,
+  "duration_sec": 9.81,
+  "slowest_labels": [
+    {
+      "label": "POST Signin (로그인)",
+      "count": 50,
+      "avg_ms": 95.86,
+      "max_ms": 192.0
+    },
+    {
+      "label": "GET DevStatus Search (개발현황 조회)",
+      "count": 50,
+      "avg_ms": 23.26,
+      "max_ms": 118.0
+    },
+    {
+      "label": "GET Login Page (로그인 페이지)",
+      "count": 50,
+      "avg_ms": 22.36,
+      "max_ms": 89.0
+    },
+    {
+      "label": "GET Main Page (메인 진입)",
+      "count": 50,
+      "avg_ms": 11.0,
+      "max_ms": 66.0
+    },
+    {
+      "label": "GET Defect Search (결함관리 조회)",
+      "count": 50,
+      "avg_ms": 10.32,
+      "max_ms": 44.0
+    }
+  ],
+  "failed_samples": []
+}

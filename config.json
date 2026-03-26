@@ -1,0 +1,14 @@
+{
+  "jmeter_bin": "C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat",
+  "default_test_plan": "jmeter/testplans/projecteyes.jmx",
+  "raw_output_dir": "output/runs",
+  "report_output_dir": "output/runs",
+  "qwen_command": "C:\\Users\\admin\\AppData\\Roaming\\npm\\qwen.cmd",
+  "gpt_oss": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "api_key": "EMPTY",
+    "model": "gpt-oss:120b",
+    "timeout_sec": 1200
+  }
+}

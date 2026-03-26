@@ -1,0 +1,38 @@
+{
+  "qwen": {
+    "enabled": false,
+    "command": "C:\\Users\\admin\\AppData\\Roaming\\npm\\qwen.cmd",
+    "timeout_sec": 120
+  },
+  "gpt_oss": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "api_key": "EMPTY",
+    "model": "gpt-oss:120b",
+    "timeout_sec": 300,
+    "stream": false,
+    "max_prompt_chars": 6000,
+    "generation": {
+      "temperature": 0.1,
+      "num_predict": 220
+    }
+  },
+  "service": {
+    "base_url": "http://192.168.0.122:8010",
+    "health_path": "/PJTE0000",
+    "login_path": "/user/signin",
+    "chat_path": "/PJTE3000/select"
+  },
+  "jmeter": {
+    "bin": "C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat",
+    "testplan_dir": "jmeter/testplans",
+    "data_dir": "jmeter/data",
+    "default_users": 10,
+    "default_ramp_up": 1,
+    "default_loops": 1,
+    "default_duration_sec": 10
+  },
+  "report": {
+    "enable_jmeter_dashboard_in_full": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "baseline_name": "projecteyes",
+  "delta_p95_ms": 31.05,
+  "delta_p99_ms": 16.01,
+  "delta_error_rate_percent": 0.0,
+  "delta_throughput_rps": 110.22,
+  "current_p95_ms": 81.05,
+  "baseline_p95_ms": 50.0,
+  "current_p99_ms": 106.01,
+  "baseline_p99_ms": 90.0,
+  "current_error_rate_percent": 0.0,
+  "baseline_error_rate_percent": 0.0,
+  "current_throughput_rps": 145.52,
+  "baseline_throughput_rps": 35.3
+}

@@ -1,0 +1,12 @@
+{
+  "total_requests": 300,
+  "success_count": 300,
+  "fail_count": 0,
+  "error_rate_percent": 0.0,
+  "avg_ms": 38.27,
+  "p90_ms": 101.4,
+  "p95_ms": 116.0,
+  "p99_ms": 129.01,
+  "max_ms": 156.0,
+  "throughput_rps": 30.35
+}

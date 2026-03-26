@@ -1,0 +1,18 @@
+{
+  "mcp": {
+    "allowed": [
+      "qa-insights"
+    ]
+  },
+  "mcpServers": {
+    "qa-insights": {
+      "command": "python",
+      "args": [
+        "C:\\Workspace\\qainsights\\server.py"
+      ],
+      "cwd": "C:\\Workspace\\qainsights",
+      "trust": true
+    }
+  },
+  "$version": 3
+}

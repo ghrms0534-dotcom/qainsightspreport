@@ -1,0 +1,21 @@
+{
+  "baseline_name": "projecteyes",
+  "description": "ProjectEyes 50명 기준선",
+  "baseline_summary": {
+    "total_requests": 1050,
+    "success_count": 1050,
+    "fail_count": 0,
+    "error_rate_percent": 0.0,
+    "avg_ms": 18.0,
+    "p90_ms": 35.0,
+    "p95_ms": 50.0,
+    "p99_ms": 90.0,
+    "max_ms": 122.0,
+    "avg_latency_ms": 15.0,
+    "avg_connect_ms": 5.0,
+    "throughput_rps": 35.3,
+    "response_code_distribution": {
+      "200": 1050
+    }
+  }
+}

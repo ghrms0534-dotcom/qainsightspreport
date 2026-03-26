@@ -1,0 +1,227 @@
+2026-03-24 16:27:49,159 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-03-24 16:27:49,168 INFO o.a.j.JMeter: Loading user properties from: C:\apache-jmeter-5.6.3\bin\user.properties
+2026-03-24 16:27:49,169 INFO o.a.j.JMeter: Loading system properties from: C:\apache-jmeter-5.6.3\bin\system.properties
+2026-03-24 16:27:49,169 INFO o.a.j.JMeter: Setting JMeter property: protocol=http
+2026-03-24 16:27:49,169 INFO o.a.j.JMeter: Setting JMeter property: domain=192.168.0.122
+2026-03-24 16:27:49,169 INFO o.a.j.JMeter: Setting JMeter property: port=8010
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: base_url=http://192.168.0.122:8010
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: health_path=/PJTE0000
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: login_path=/user/signin
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: chat_path=/PJTE3000/select
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: username_field=username
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: password_field=password
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: chat_question_field=question
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: auth_token_json_path=$.access_token
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: chat_answer_json_path=$.answer
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: users=50
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: ramp_up=10
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: loops=1
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: duration_sec=300
+2026-03-24 16:27:49,170 INFO o.a.j.JMeter: Setting JMeter property: data_dir=C:\Workspace\qainsights\jmeter\data
+2026-03-24 16:27:49,178 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-03-24 16:27:49,178 INFO o.a.j.JMeter: Version 5.6.3
+2026-03-24 16:27:49,178 INFO o.a.j.JMeter: java.version=25.0.2
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: os.name=Windows 11
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: os.arch=amd64
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: os.version=10.0
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: java.awt.headless=true
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-03-24 16:27:49,179 INFO o.a.j.JMeter: Available Processors =16
+2026-03-24 16:27:49,193 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-03-24 16:27:49,193 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-03-24 16:27:49,194 INFO o.a.j.JMeter: JMeterHome=C:\apache-jmeter-5.6.3
+2026-03-24 16:27:49,194 INFO o.a.j.JMeter: user.dir  =C:\Workspace\qainsights
+2026-03-24 16:27:49,194 INFO o.a.j.JMeter: PWD       =C:\Workspace\qainsights
+2026-03-24 16:27:49,195 INFO o.a.j.JMeter: IP: 192.168.0.77 Name: DESKTOP-CTPEQ2J FullName: DESKTOP-CTPEQ2J
+2026-03-24 16:27:49,207 INFO o.a.j.s.FileServer: Default base='C:\Workspace\qainsights'
+2026-03-24 16:27:49,208 INFO o.a.j.s.FileServer: Set new base='C:\Workspace\qainsights\jmeter\testplans'
+2026-03-24 16:27:49,452 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-03-24 16:27:49,471 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-03-24 16:27:49,474 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-03-24 16:27:49,478 INFO o.a.j.s.SaveService: Loading file: C:\Workspace\qainsights\jmeter\testplans\projecteyes.jmx
+2026-03-24 16:27:49,534 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-03-24 16:27:49,552 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-03-24 16:27:49,611 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-03-24 16:27:49,627 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-03-24 16:27:49,628 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-03-24 16:27:49,628 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-03-24 16:27:49,633 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-03-24 16:27:49,633 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-03-24 16:27:49,744 INFO o.a.j.JMeter: Running test (1774337269744)
+2026-03-24 16:27:49,767 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group (사용자 시나리오)
+2026-03-24 16:27:49,767 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Thread Group (사용자 시나리오).
+2026-03-24 16:27:49,767 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-03-24 16:27:49,768 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=50 delayedStart=false
+2026-03-24 16:27:49,778 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-03-24 16:27:49,778 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-03-24 16:27:49,778 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-03-24 16:27:49,778 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-03-24 16:27:49,782 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-1
+2026-03-24 16:27:49,834 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-03-24 16:27:49,835 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-03-24 16:27:50,778 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-2
+2026-03-24 16:27:51,424 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-CTPEQ2J
+2026-03-24 16:27:51,429 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-03-24 16:27:51,775 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-3
+2026-03-24 16:27:52,774 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-4
+2026-03-24 16:27:53,773 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-5
+2026-03-24 16:27:54,772 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-6
+2026-03-24 16:27:55,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-7
+2026-03-24 16:27:56,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-8
+2026-03-24 16:27:57,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-9
+2026-03-24 16:27:58,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-10
+2026-03-24 16:27:59,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-11
+2026-03-24 16:28:00,168 INFO o.a.j.r.Summariser: summary +     27 in 00:00:10 =    2.6/s Avg:    37 Min:     6 Max:   122 Err:     0 (0.00%) Active: 11 Started: 11 Finished: 0
+2026-03-24 16:28:00,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-12
+2026-03-24 16:28:01,769 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-13
+2026-03-24 16:28:02,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-14
+2026-03-24 16:28:03,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-15
+2026-03-24 16:28:04,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-16
+2026-03-24 16:28:05,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-17
+2026-03-24 16:28:06,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-18
+2026-03-24 16:28:07,772 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-19
+2026-03-24 16:28:08,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-20
+2026-03-24 16:28:09,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-21
+2026-03-24 16:28:10,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-22
+2026-03-24 16:28:11,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-23
+2026-03-24 16:28:12,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-24
+2026-03-24 16:28:13,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-25
+2026-03-24 16:28:14,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-26
+2026-03-24 16:28:15,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-27
+2026-03-24 16:28:16,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-28
+2026-03-24 16:28:17,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-29
+2026-03-24 16:28:18,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-30
+2026-03-24 16:28:19,769 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-31
+2026-03-24 16:28:20,773 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-32
+2026-03-24 16:28:21,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-33
+2026-03-24 16:28:22,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-34
+2026-03-24 16:28:23,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-35
+2026-03-24 16:28:24,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-36
+2026-03-24 16:28:25,576 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-2
+2026-03-24 16:28:25,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-2
+2026-03-24 16:28:25,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-37
+2026-03-24 16:28:26,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-38
+2026-03-24 16:28:27,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-39
+2026-03-24 16:28:28,052 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-3
+2026-03-24 16:28:28,052 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-3
+2026-03-24 16:28:28,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-40
+2026-03-24 16:28:29,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-41
+2026-03-24 16:28:29,818 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-1
+2026-03-24 16:28:29,818 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-1
+2026-03-24 16:28:30,008 INFO o.a.j.r.Summariser: summary +    367 in 00:00:30 =   12.3/s Avg:    28 Min:     4 Max:   183 Err:     0 (0.00%) Active: 38 Started: 41 Finished: 3
+2026-03-24 16:28:30,009 INFO o.a.j.r.Summariser: summary =    394 in 00:00:40 =    9.8/s Avg:    28 Min:     4 Max:   183 Err:     0 (0.00%)
+2026-03-24 16:28:30,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-42
+2026-03-24 16:28:31,532 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-4
+2026-03-24 16:28:31,532 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-4
+2026-03-24 16:28:31,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-43
+2026-03-24 16:28:31,920 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-6
+2026-03-24 16:28:31,921 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-6
+2026-03-24 16:28:32,125 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-5
+2026-03-24 16:28:32,126 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-5
+2026-03-24 16:28:32,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-44
+2026-03-24 16:28:33,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-45
+2026-03-24 16:28:34,771 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-46
+2026-03-24 16:28:35,258 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-7
+2026-03-24 16:28:35,258 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-7
+2026-03-24 16:28:35,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-47
+2026-03-24 16:28:36,769 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-48
+2026-03-24 16:28:37,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-49
+2026-03-24 16:28:37,819 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-9
+2026-03-24 16:28:37,819 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-9
+2026-03-24 16:28:38,048 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-10
+2026-03-24 16:28:38,048 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-10
+2026-03-24 16:28:38,268 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-8
+2026-03-24 16:28:38,268 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-8
+2026-03-24 16:28:38,770 INFO o.a.j.t.JMeterThread: Thread started: Thread Group (사용자 시나리오) 1-50
+2026-03-24 16:28:39,376 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-15
+2026-03-24 16:28:39,377 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-15
+2026-03-24 16:28:39,806 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-11
+2026-03-24 16:28:39,806 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-11
+2026-03-24 16:28:41,394 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-12
+2026-03-24 16:28:41,394 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-12
+2026-03-24 16:28:41,673 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-13
+2026-03-24 16:28:41,673 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-13
+2026-03-24 16:28:45,299 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-18
+2026-03-24 16:28:45,299 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-18
+2026-03-24 16:28:47,822 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-16
+2026-03-24 16:28:47,822 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-16
+2026-03-24 16:28:48,992 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-19
+2026-03-24 16:28:48,992 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-19
+2026-03-24 16:28:49,286 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-20
+2026-03-24 16:28:49,286 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-20
+2026-03-24 16:28:49,419 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-14
+2026-03-24 16:28:49,419 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-14
+2026-03-24 16:28:49,829 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-21
+2026-03-24 16:28:49,829 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-21
+2026-03-24 16:28:50,549 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-24
+2026-03-24 16:28:50,549 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-24
+2026-03-24 16:28:50,808 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-22
+2026-03-24 16:28:50,808 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-22
+2026-03-24 16:28:53,282 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-23
+2026-03-24 16:28:53,282 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-23
+2026-03-24 16:28:53,433 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-17
+2026-03-24 16:28:53,433 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-17
+2026-03-24 16:28:53,734 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-27
+2026-03-24 16:28:53,734 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-27
+2026-03-24 16:28:53,998 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-28
+2026-03-24 16:28:53,999 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-28
+2026-03-24 16:28:55,756 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-26
+2026-03-24 16:28:55,757 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-26
+2026-03-24 16:28:55,875 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-25
+2026-03-24 16:28:55,876 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-25
+2026-03-24 16:28:57,496 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-29
+2026-03-24 16:28:57,496 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-29
+2026-03-24 16:29:00,022 INFO o.a.j.r.Summariser: summary +    496 in 00:00:30 =   16.5/s Avg:    18 Min:     3 Max:   116 Err:     0 (0.00%) Active: 21 Started: 50 Finished: 29
+2026-03-24 16:29:00,022 INFO o.a.j.r.Summariser: summary =    890 in 00:01:10 =   12.7/s Avg:    22 Min:     3 Max:   183 Err:     0 (0.00%)
+2026-03-24 16:29:00,170 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-32
+2026-03-24 16:29:00,170 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-32
+2026-03-24 16:29:01,228 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-30
+2026-03-24 16:29:01,228 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-30
+2026-03-24 16:29:01,341 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-33
+2026-03-24 16:29:01,341 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-33
+2026-03-24 16:29:02,556 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-36
+2026-03-24 16:29:02,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-36
+2026-03-24 16:29:03,000 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-34
+2026-03-24 16:29:03,000 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-34
+2026-03-24 16:29:03,280 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-31
+2026-03-24 16:29:03,281 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-31
+2026-03-24 16:29:06,638 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-42
+2026-03-24 16:29:06,638 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-42
+2026-03-24 16:29:07,640 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-40
+2026-03-24 16:29:07,640 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-40
+2026-03-24 16:29:08,985 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-37
+2026-03-24 16:29:08,985 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-37
+2026-03-24 16:29:09,427 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-41
+2026-03-24 16:29:09,428 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-41
+2026-03-24 16:29:09,469 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-35
+2026-03-24 16:29:09,469 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-35
+2026-03-24 16:29:09,976 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-44
+2026-03-24 16:29:09,976 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-44
+2026-03-24 16:29:10,586 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-39
+2026-03-24 16:29:10,586 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-39
+2026-03-24 16:29:12,433 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-38
+2026-03-24 16:29:12,434 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-38
+2026-03-24 16:29:13,355 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-43
+2026-03-24 16:29:13,356 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-43
+2026-03-24 16:29:14,543 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-46
+2026-03-24 16:29:14,543 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-46
+2026-03-24 16:29:15,975 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-47
+2026-03-24 16:29:15,975 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-47
+2026-03-24 16:29:16,260 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-49
+2026-03-24 16:29:16,260 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-49
+2026-03-24 16:29:17,148 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-48
+2026-03-24 16:29:17,148 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-48
+2026-03-24 16:29:18,658 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-50
+2026-03-24 16:29:18,658 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-50
+2026-03-24 16:29:20,664 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group (사용자 시나리오) 1-45
+2026-03-24 16:29:20,665 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group (사용자 시나리오) 1-45
+2026-03-24 16:29:20,665 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-03-24 16:29:20,666 INFO o.a.j.r.Summariser: summary +    110 in 00:00:21 =    5.3/s Avg:    16 Min:     6 Max:    73 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+2026-03-24 16:29:20,666 INFO o.a.j.r.Summariser: summary =   1000 in 00:01:31 =   11.0/s Avg:    22 Min:     3 Max:   183 Err:     0 (0.00%)

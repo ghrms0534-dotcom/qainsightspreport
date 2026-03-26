@@ -1,0 +1,10 @@
+{
+  "플랜명": "smoke_health",
+  "결과폴더": "C:\\Workspace\\qainsights\\output\\runs\\20260323_111622_smoke_health",
+  "원본결과파일": "C:\\Workspace\\qainsights\\output\\runs\\20260323_111622_smoke_health\\raw.jtl",
+  "HTML리포트폴더": "C:\\Workspace\\qainsights\\output\\runs\\20260323_111622_smoke_health\\html",
+  "사용자수": 50,
+  "램프업": 10,
+  "반복수": 2,
+  "지속시간초": 60
+}

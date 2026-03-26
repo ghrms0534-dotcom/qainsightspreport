@@ -1,0 +1,11 @@
+ERROR StatusConsoleListener Error processing element GuiLogEvent ([Appenders: null]): CLASS_NOT_FOUND
+ERROR StatusConsoleListener Unable to locate appender "gui-log-event" for logger config "root"
+Creating summariser <summary>
+Created the tree successfully using C:\Workspace\qainsights\jmeter\testplans\projecteyes.jmx
+Starting standalone test @ 2026 Mar 24 11:10:55 GMT+09:00 (1774318255698)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +    123 in 00:00:04 =   28.9/s Avg:    32 Min:     3 Max:   148 Err:     0 (0.00%) Active: 2 Started: 22 Finished: 20
+summary +    177 in 00:00:06 =   30.5/s Avg:    42 Min:     3 Max:   156 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+summary =    300 in 00:00:10 =   29.8/s Avg:    38 Min:     3 Max:   156 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Mar 24 11:11:05 GMT+09:00 (1774318265902)
+... end of run
