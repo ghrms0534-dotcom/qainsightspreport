@@ -211,8 +211,156 @@ python run_performance_test.py --plan auth_login --users 5 --ramp-up 5 --loops 1
 python run_performance_test.py --plan rag_query --users 5 --ramp-up 5 --loops 1
 python run_performance_test.py --plan e2e_user_journey --users 5 --ramp-up 5 --loops 1
 python run_performance_test.py --plan concurrent_overload --users 20 --ramp-up 10 --loops 2
+# 🚀 QA Insights 성능검증 자동화 플랫폼 (Automated Performance Testing Stack)
+
+QA Insights 서비스의 안정성과 성능을 보장하기 위한 **JMeter + Qwen CLI + GPT-OSS:120B + MCP** 기반의 통합 성능 테스트 자동화 프로젝트입니다. 
+
+이 시스템은 단순한 부하 테스트를 넘어, **부하 발생 ➔ 결과 수집 ➔ AI 기반 성능 분석 ➔ 최종 리포트 생성**에 이르는 전체 파이프라인을 자동화하여 테스트 엔지니어의 개입을 최소화하고 의사결정 속도를 극대화합니다.
+
+---
+
+## 🌟 핵심 기능 (Core Value)
+
+1.  **End-to-End 자동화 파이프라인**
+    *   **JMeter**를 통한 정밀한 API 시나리오 실행 및 부하 생성.
+    *   **Qwen CLI**를 통한 1차 텍록 데이터 및 수치 요약.
+    *   **GPT-OSS:120B**를 이용한 심층적인 병목 구간 분석 및 가설 수립.
+2.  **지능형 성능 분석**
+    *   `summary.json`, `gate.json`을 생성하여 사전 정의된 성능 기준(SLA) 통과 여부를 자동 판정.
+    *   Baseline(기준선) 비교를 통해 이전 배포 대비 성능 저하(Regression)를 즉각 감지.
+3.  **다차원 리포팅**
+    *   기술자를 위한 상세 `jlt`, `JSON` 로그.
+    *   관리자를 위한 Markdown 요약 (`llm_report.md`) 및 한글 HTML 대시보드 (`report.html`).
+4.  **MCP(Model Context Protocol) 지원**
+    *   AI 에이전트가 직접 성능 테스트를 트리거하고 결과를 조회할 수 있는 MCP 서버 제공.
+
+---
+
+## 🛠 시스템 구성도 (Architecture)
+
+```mermaid
+graph TD
+    A[JMeter Engine] -->|1. Execute Scenarios| B(API Service)
+    B -->|2. Generate JTL| C[Result Processor]
+    C -->|3. Summarize| D[Qwen CLI: Fast Summary]
+    C -->|4. Deep Analysis| E[GPT-OSS: 1s Analysis]
+    D & E -->|5. Aggregate| F[Final Reports: MD/HTML]
+    G[MCP Server] -->|Control & Query| C
 ```
 
-## 한글 보고서
-테스트가 끝나면 각 실행 폴더에 `report.html`이 자동 생성됩니다.
-이 파일은 한글 요약 화면이며, `html/index.html`은 JMeter 원본 영어 리포트입니다.
+---
+
+## 🚀 시작하기 (Getting Started)
+
+### 1. 사전 요구사항 (Prerequisites)
+*   **Python 3.10+**
+*   **Apache JMeter** (설치 및 `config/local.json` 경로 설정 필수)
+*   **LLM API/Local Server** (Ollama 또는 OpenAI 호환 API 서버 - vLLM 등)
+*   **Node.js** (Qwen CLI 실행을 위한 환경)
+
+### 2. 환경 설정 (Configuration)
+`config/local.json` 파일을 프로젝트 환경에 맞게 수정합니다.
+
+```json
+{
+  "qwen": {
+    "enabled": false,
+    "command": "C:\\Users\\admin\\AppData\\Roaming\\npm\\qwen.cmd",
+    "timeout_sec": 120
+  },
+  "gpt_oss": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "api_key": "EMPTY",
+    "model": "gpt-oss:120b",
+    "timeout_sec": 300,
+    "stream": false,
+    "max_prompt_chars": 6000,
+    "generation": {
+      "temperature": 0.1,
+      "num_predict": 220
+    }
+  },
+  "service": {
+    "base_url": "http://192.168.0.122:8010",
+    "health_path": "/PJTE0000",
+    "login_path": "/user/signin",
+    "chat_path": "/PJTE3000/select"
+  },
+  "jmeter": {
+    "bin": "C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat",
+    "testplan_dir": "jmeter/testplans",
+    "data_dir": "jmeter/data",
+    "default_users": 10,
+    "default_ramp_up": 1,
+    "default_loops": 1,
+    "default_duration_sec": 10
+  },
+  "report": {
+    "enable_jmeter_dashboard_in_full": false
+  }
+}
+```
+
+### 3. 테스트 실행 (Execution)
+
+#### **[모드 1] Quick Mode (빠른 확인)**
+가장 핵심적인 수치(Summary, Gate)와 AI 요약만 빠르게 생성합니다.
+```bash
+python run_performance_test.py --plan smoke_health --users 1 --ramp-up 1 --loops 1
+```
+
+#### **[모드 2] Full Mode (심층 분석)**
+HTML 대시보드, Baseline 비교, 한글 리포트까지 모든 결과물을 생성합니다.
+```bash
+python run_performance_test.py --plan concurrent_overload --users 50 --ramp-up 10 --loops 3 --pipeline-mode full
+```
+
+---
+
+## 📂 프로젝트 구조 (Project Structure)
+
+| 디렉토리 | 설명 |
+| :--- | :--- |
+| `jmeter/testplans/` | 실행 가능한 `.jmx` 테스트 시나리오 파일 저장소 |
+| `config/` | 서비스 URL, JMeter 경로, LLM 설정 등 핵심 환경 설정 |
+| `scripts/` | 파이프라인 실행 로직, 요약 및 리포트 생성 스크립트 |
+| `output/runs/` | 실행 결과물 (JTL, JSON, HTML 리포트, AI 분석 로그) |
+| `baselines/` | 성능 기준선(Baseline) 데이터 저장 (`.json`) |
+| `server.py` | MCP 서버 (AI 에이전트용 인터페이스) |
+
+---
+
+## 📊 결과물 확인 (Outputs)
+
+실행 완료 후 `output/runs/<timestamp>_<plan>/` 폴더에서 다음 파일을 확인할 수 있습니다.
+
+*   📄 **`llm_report.md`**: Qwen과 GPT-OSS가 작성한 텍스트 기반 요약 보고서
+*   🌐 **`report.html`**: 프로젝트 전체 결과를 시각화한 한글 웹 리포트
+*   📉 **`summary.json`**: TPS, Error Rate, Latency 등 주요 지표 요약
+*   ✅ **`gate.json`**: SLA 통과 여부 (PASS/FAIL)
+*   🔍 **`baseline_compare.json`**: 이전 테스트 결과와의 성능 차이 분석 데이터
+
+---
+
+## 🤖 AI Agent 활용 (MCP Server)
+
+MCP 서버를 활용하면 Claude나 다른 AI 에이전트가 직접 성능 테스트를 수행하도록 할 수 있습니다.
+
+```bash
+# MCP 서버 실행
+python server.py
+```
+
+**사용 가능한 Tool:**
+*   `run_jmeter_test`: 특정 플랜으로 테스트 수행
+*   `analyze_jtl`: JTL 로그의 상세 패턴 분석
+*   `compare_with_baseline`: 현재 결과와 과거 성능 비교
+*   `run_full_qa_pipeline`: 테스트부터 최종 리포트 생성까지 전체 자동화
+
+**한국어 별칭:**
+*   `헬스체크` → `smoke_health`
+*   `로그인성능` → `auth_login`
+*   `질의응답성능` → `rag_query`
+*   `종합흐름` → `e2e_user_journey`
+*   `과부하테스트` → `concurrent_overload`
